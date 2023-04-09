@@ -1,0 +1,109 @@
+body {
+  width: 580px;
+  margin: 90px auto;
+  padding: 0 20px 0 20px;
+}
+
+body,
+article,
+.gist-meta {
+  font-family: 'Gill Sans MT', Gill Sans, Sans-serif !important;
+}
+
+article {
+  padding: 30px !important;
+}
+
+header {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 60px;
+  background: url(kusai.png);
+  background-size: 100% 100%;
+}
+
+header i {
+  color: #ddd;
+}
+
+a {
+  color: black;
+}
+
+footer {
+  margin-top: 60px;
+  color: gray;
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    width: auto;
+  }
+
+  .gist-data {
+    max-height: 8964px !important;
+  }
+}
+
+@media (hover: none),
+(pointer: coarse) {
+  .gist-data {
+    max-height: 8964px !important;
+  }
+}
+
+.gist,
+.gist-file {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  display: -webkit-box;
+  flex-direction: column-reverse;
+}
+
+.gist-file {
+  border: 1px solid #ddd !important;
+  border-radius: 0 !important;
+}
+
+.gist-file:first-child,
+.gist-meta a:first-child,
+.gist-meta a:nth-child(3) {
+  display: none;
+}
+
+.gist-file:active .gist-data,
+.gist-file:hover .gist-data {
+  -webkit-transition: max-height 0s;
+  -o-transition: max-height 0s;
+  max-height: 8964px;
+  transition: max-height 0s;
+}
+
+.gist-meta {
+  pointer-events: none;
+  cursor: default;
+  border-radius: 0 !important;
+  color: rgba(0, 0, 0, 0) !important;
+}
+
+.gist-meta a:nth-child(2) {
+  word-spacing: 6px;
+  color: transparent !important;
+  background-color: #666;
+  background: -webkit-linear-gradient(279deg, rgba(0, 0, 0, 0) 2.43em, #666 2.43em);
+  background: -moz-linear-gradient(279deg, rgba(0, 0, 0, 0) 2.43em, #666 2.43em);
+  background: -o-linear-gradient(279deg, rgba(0, 0, 0, 0) 2.43em, #666 2.43em);
+  background: linear-gradient(279deg, rgba(0, 0, 0, 0) 2.43em, #666 2.43em);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.gist-data {
+  -webkit-transition: max-height 1s 0.5s;
+  -o-transition: max-height 1s 0.5s;
+  max-height: 0;
+  transition: max-height 1s 0.5s;
+  border-bottom: 0 !important;
+  word-wrap: break-word !important;
+}
