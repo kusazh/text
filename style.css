@@ -72,11 +72,16 @@ footer {
   display: none;
 }
 
+.gist-file:last-child .gist-data,
+.gist-file:active .gist-data,
+.gist-file:hover .gist-data {
+  max-height: 8964px !important;
+}
+
 .gist-file:active .gist-data,
 .gist-file:hover .gist-data {
   -webkit-transition: max-height 0s;
   -o-transition: max-height 0s;
-  max-height: 8964px;
   transition: max-height 0s;
 }
 
