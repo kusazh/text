@@ -93,13 +93,12 @@ footer {
 }
 
 .gist-meta a:nth-child(2) {
-  word-spacing: 6px;
   color: transparent !important;
   background-color: #666;
-  background: -webkit-linear-gradient(279deg, rgba(0, 0, 0, 0) 2.43em, #666 2.43em);
-  background: -moz-linear-gradient(279deg, rgba(0, 0, 0, 0) 2.43em, #666 2.43em);
-  background: -o-linear-gradient(279deg, rgba(0, 0, 0, 0) 2.43em, #666 2.43em);
-  background: linear-gradient(279deg, rgba(0, 0, 0, 0) 2.43em, #666 2.43em);
+  background: -webkit-linear-gradient(279deg, rgba(0, 0, 0, 0) 1.93em, #666 1.93em);
+  background: -moz-linear-gradient(279deg, rgba(0, 0, 0, 0) 1.93em, #666 1.93em);
+  background: -o-linear-gradient(279deg, rgba(0, 0, 0, 0) 1.93em, #666 1.93em);
+  background: linear-gradient(279deg, rgba(0, 0, 0, 0) 1.93em, #666 1.93em);
   -webkit-background-clip: text;
   background-clip: text;
 }
