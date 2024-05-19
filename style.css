@@ -1,25 +1,24 @@
 body {
-  width: 580px;
-  margin: 90px auto;
-  padding: 0 20px 0 20px;
+  width: 36rem;
+  margin: 1rem auto;
+  padding: 0 1rem 0 1rem;
 }
 
 body,
 article,
 .gist-meta {
-  font-family: 'Gill Sans MT', Gill Sans, Sans-serif !important;
+  font-family: "Gill Sans MT", "Gill Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
 }
 
 article {
-  padding: 30px !important;
+  padding: 2rem !important;
 }
 
 header {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 60px;
-  background: url(kusai.png);
-  background-size: 100% 100%;
+  width: 12rem;
+  height: 12rem;
+  margin: 4rem 0 2rem 0;
+  background: center / contain url(../images/text.png);
 }
 
 header i {
@@ -31,34 +30,34 @@ a {
 }
 
 footer {
-  margin-top: 60px;
   color: gray;
+  margin: 2rem 0 4rem 0;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 38rem) {
   body {
     width: auto;
   }
 
   .gist-data {
-    max-height: 8964px !important;
+    max-height: 896.4rem !important;
   }
 }
 
 @media (hover: none),
 (pointer: coarse) {
   .gist-data {
-    max-height: 8964px !important;
+    max-height: 896.4rem !important;
   }
 }
 
 .gist,
 .gist-file {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: column-reverse;
   display: -webkit-box;
   flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
 }
 
 .gist-file {
@@ -75,39 +74,32 @@ footer {
 .gist-file:last-child .gist-data,
 .gist-file:active .gist-data,
 .gist-file:hover .gist-data {
-  max-height: 8964px !important;
+  max-height: 896.4rem !important;
 }
 
 .gist-file:active .gist-data,
 .gist-file:hover .gist-data {
-  -webkit-transition: max-height 0s;
-  -o-transition: max-height 0s;
   transition: max-height 0s;
 }
 
 .gist-meta {
-  pointer-events: none;
-  cursor: default;
   border-radius: 0 !important;
   color: rgba(0, 0, 0, 0) !important;
+  max-height: 1rem;
+  pointer-events: none;
+  cursor: default;
 }
 
 .gist-meta a:nth-child(2) {
   color: transparent !important;
   background-color: #666;
-  background: -webkit-linear-gradient(279deg, rgba(0, 0, 0, 0) 1.93em, #666 1.93em);
-  background: -moz-linear-gradient(279deg, rgba(0, 0, 0, 0) 1.93em, #666 1.93em);
-  background: -o-linear-gradient(279deg, rgba(0, 0, 0, 0) 1.93em, #666 1.93em);
-  background: linear-gradient(279deg, rgba(0, 0, 0, 0) 1.93em, #666 1.93em);
-  -webkit-background-clip: text;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 2rem, #666 2rem);
   background-clip: text;
 }
 
 .gist-data {
-  -webkit-transition: max-height 1s 0.5s;
-  -o-transition: max-height 1s 0.5s;
   max-height: 0;
-  transition: max-height 1s 0.5s;
   border-bottom: 0 !important;
   word-wrap: break-word !important;
+  transition: max-height 1s 0.5s;
 }
