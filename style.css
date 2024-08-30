@@ -60,6 +60,10 @@ footer {
   -webkit-box-direction: reverse;
 }
 
+.gist .markdown-body * {
+  margin: 1.5rem 0 1rem 0 !important;
+}
+
 .gist-file {
   border: 1px solid #ddd !important;
   border-radius: 0 !important;
